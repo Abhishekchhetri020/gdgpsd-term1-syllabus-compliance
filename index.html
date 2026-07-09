@@ -6,31 +6,34 @@
 <title>Term I Syllabus Compliance | GDGPSD 2026-27</title>
 <link rel="icon" href="data:,">
 <style>
-  html,body{margin:0;padding:0;height:100%;background:#eef2f7;font-family:Segoe UI,Arial,sans-serif}
-  #frame{display:block;border:0;width:100%;height:100vh}
-  #fallback{display:none;padding:24px;max-width:560px;margin:40px auto;background:#fff;
-            border-radius:10px;box-shadow:0 2px 16px rgba(0,0,0,.08);text-align:center}
-  #fallback h2{color:#1a3c6e;margin:0 0 12px;font-size:1.05rem}
-  #fallback a{display:inline-block;margin-top:14px;padding:12px 28px;background:#1a3c6e;
-              color:#fff;text-decoration:none;border-radius:8px;font-weight:700}
+  html,body{margin:0;padding:0;min-height:100%;background:#eef2f7;font-family:Segoe UI,Arial,sans-serif;color:#1f2937}
+  .card{padding:28px;max-width:560px;margin:48px auto;background:#fff;
+        border-radius:10px;box-shadow:0 2px 16px rgba(0,0,0,.08);text-align:center}
+  h1{color:#1a3c6e;margin:0 0 10px;font-size:1.15rem}
+  p{margin:8px 0;color:#64748b;line-height:1.5}
+  a{display:inline-block;margin-top:16px;padding:12px 28px;background:#1a3c6e;
+    color:#fff;text-decoration:none;border-radius:8px;font-weight:700}
 </style>
 </head>
 <body>
-<iframe id="frame"
-        title="Term I Syllabus Compliance Form"
-        allow="clipboard-write"
-        referrerpolicy="no-referrer"></iframe>
+<div class="card">
+  <h1>Opening Term I Syllabus Compliance Form</h1>
+  <p>If the form does not open automatically, use the button below.</p>
+  <a id="openLink" href="https://script.google.com/macros/s/AKfycbwQ04kddv82noiBODjWe9_A0rupJ6qIzk_ox15TuECkLhKcOkv0OWB2VxCPKqXH-MCx/exec">Open form</a>
+</div>
 
 <script>
   (function(){
     var base = "https://script.google.com/macros/s/AKfycbwQ04kddv82noiBODjWe9_A0rupJ6qIzk_ox15TuECkLhKcOkv0OWB2VxCPKqXH-MCx/exec";
     var qs = window.location.search || "";
-    document.getElementById("frame").src = base + qs;
+    var target = base + qs;
+    document.getElementById("openLink").href = target;
+    window.location.replace(target);
   })();
 </script>
 
 <noscript>
-  <div id="fallback" style="display:block">
+  <div class="card">
     <h2>JavaScript is required</h2>
     <p>Please enable JavaScript or open the form directly.</p>
     <a href="https://script.google.com/macros/s/AKfycbwQ04kddv82noiBODjWe9_A0rupJ6qIzk_ox15TuECkLhKcOkv0OWB2VxCPKqXH-MCx/exec">Open form</a>
